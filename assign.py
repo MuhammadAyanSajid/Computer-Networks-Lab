@@ -6,14 +6,11 @@ port = 587
 
 sender_email = "muhammadayansajid2005@gmail.com"
 password = "cczx islp pmcq ejuo" 
-receiver_email = "2024cs696@student.uet.edu.pk"
+receiver_email = "2024cs661@student.uet.edu.pk"
 
-subject = "Test Email from Python"
-body = """\
-Hello!
-This is a test email sent from Python using Gmail SMTP over TCP with TLS.
-"""
-
+subject = input("Enter the subject of the email: ")
+body = input("Enter the body of the email: ")
+ 
 message = f"Subject: {subject}\n\n{body}"
 
 context = ssl.create_default_context()
